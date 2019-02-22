@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/i1"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="text" />
+
+        <item
+            android:id="@+id/i2"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="text" />
+
+        <item
+            android:id="@+id/i3"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="text " />
+
+        <item
+            android:id="@+id/i4"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="text" />
+        <item
+            android:id="@+id/i5"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="text" />
+        <item
+            android:id="@+id/i6"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="text" />
+        <item
+            android:id="@+id/i7"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="text" />
+        <item
+            android:id="@+id/i8"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="text" />
+
+    </group>
+
+
+
+</menu>
