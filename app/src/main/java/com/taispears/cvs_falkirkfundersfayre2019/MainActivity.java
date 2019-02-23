@@ -85,15 +85,15 @@ public class MainActivity extends AppCompatActivity
 
 
 
-//        Button homeButon = findViewById(R.id.home_button);
-//        homeButon.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent homeButtenintent = new Intent(v.getContext(), MainActivity.class);
-//                startActivity(homeButtenintent);
-//                finish();
-//            }
-//        });
+        Button homeButon = findViewById(R.id.home_button);
+        homeButon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent homeButtenintent = new Intent(v.getContext(), MainActivity.class);
+                startActivity(homeButtenintent);
+                finish();
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_Layout);
         drawer.closeDrawer(GravityCompat.START);

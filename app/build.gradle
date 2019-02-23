@@ -4,6 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.taispears.cvs_falkirkfundersfayre2019"
+        vectorDrawables.useSupportLibrary = true
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
