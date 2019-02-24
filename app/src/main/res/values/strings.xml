@@ -4,4 +4,35 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
 
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="home_legal">www.cvsfalkirk.org.uk | 01324 692000 | info@cvsfalkirk.org.uk | @CVSFalkirk
+        \nCVS Falkirk and District is a Company Limited by Guarantee in Scotland No. SC085838 | Scottish Charity No. SC000312 |
+        Registered office: Unit 6, Callendar Business Park, Callendar Road, Falkirk, FK1 1XR</string>
+
+    <string name="home_p1">Thank you for coming along to our Funders Fayre today, we hope you find the event useful and informative. CVS Falkirk and Falkirk Council
+    work together to support local third sector organisations to access funding and are grateful to all our exhibitors here today.\n
+    </string>
+
+    <string name="home_p2">As the Third Sector Interface for the Falkirk Council area, CVS Falkirk exists to
+    promote, develop and represent the third sector and volunteering. We offer
+    assistance and support to communities, groups, voluntary organisations, social enterprises, co-operatives, trusts, CICs and other third sector groups locally.\n
+    </string>
+
+    <string name="home_p3">Within the organisation support team we offer funding support and guidance to third sector organisations through a variety of ways:
+    </string>
+
+    <string name="home_list">
+        \n• Bespoke funding search specific to the organisation and project
+        \n• Support to understand funders’ guidance, criteria etc.
+        \n• Review of funding applications
+        \n• Weekly funding updates through our e-bulletin
+        \n• Monthly funding hotlists
+        \n• Promotion of local fundraising events through our website,
+        \n• e-bulletin and social media
+
+    </string>
+    <string name="home_contact">test</string>
+    <string name="home_signup">test</string>
+    <string name="home_heading">Welcome\n</string>
+
 </resources>
