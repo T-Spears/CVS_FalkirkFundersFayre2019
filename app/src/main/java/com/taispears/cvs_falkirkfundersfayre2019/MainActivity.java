@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListView;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -174,44 +173,44 @@ public class MainActivity extends AppCompatActivity
 
                     if (!headerList.get(groupPosition).hasChildren) {
 
-                        if (headerList.get(groupPosition).getItemID() == "menu1") {
+                        if (headerList.get(groupPosition).getItemID().equals("menu1")) {
 
 
                                     startActivity( new Intent(v.getContext(), MainActivity.class));
                                     finish();
                                     onBackPressed();
 
-                        } else if (headerList.get(groupPosition).getItemID() == "fundingtt") {
+                        } else if (headerList.get(groupPosition).getItemID().equals("fundingtt")) {
 
                             getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
                                     new FragmentFundingTips()).commit();
                             onBackPressed();
 
-                        }else if (headerList.get(groupPosition).getItemID() == "map") {
+                        }else if (headerList.get(groupPosition).getItemID().equals("map")) {
 
                             getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
                                     new FragmentMap()).commit();
                             onBackPressed();
 
-                        }else if (headerList.get(groupPosition).getItemID() == "contact") {
+                        }else if (headerList.get(groupPosition).getItemID().equals("contact")) {
 
                             getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
                                     new FragmentContact()).commit();
                             onBackPressed();
 
-                        }else if (headerList.get(groupPosition).getItemID() == "twit") {
+                        }else if (headerList.get(groupPosition).getItemID().equals("twit")) {
 
                             getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
                                     new FragmentTwitter()).commit();
                             onBackPressed();
 
-                        }else if (headerList.get(groupPosition).getItemID() == "reminder") {
+                        }else if (headerList.get(groupPosition).getItemID().equals("reminder")) {
 
                             getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
                                     new FragmentReminder()).commit();
                             onBackPressed();
 
-                        }else if (headerList.get(groupPosition).getItemID() == "credits") {
+                        }else if (headerList.get(groupPosition).getItemID().equals("credits")) {
 
                             getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
                                     new FragmentCredits()).commit();
@@ -233,12 +232,12 @@ public class MainActivity extends AppCompatActivity
 
                 if (childList.get(headerList.get(groupPosition)) != null) {
 
-                    if (childList.get(headerList.get(groupPosition)).get(childPosition).getItemID() =="exhibitors_funders") {
+                    if (childList.get(headerList.get(groupPosition)).get(childPosition).getItemID().equals("exhibitors_funders")) {
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
                                 new FragmentExhibitorsFunders()).commit();
                                 onBackPressed();
                     }
-                    else if (childList.get(headerList.get(groupPosition)).get(childPosition).getItemID() =="exhibitors_3s") {
+                    else if (childList.get(headerList.get(groupPosition)).get(childPosition).getItemID().equals("exhibitors_3s")) {
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
                                 new FragmentExhibitors3s()).commit();
                         onBackPressed();
