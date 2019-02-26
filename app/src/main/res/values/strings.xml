@@ -7,7 +7,7 @@
 
     <string name="home_legal">www.cvsfalkirk.org.uk | 01324 692000 | info@cvsfalkirk.org.uk | @CVSFalkirk
         \nCVS Falkirk and District is a Company Limited by Guarantee in Scotland No. SC085838 | Scottish Charity No. SC000312 |
-        Registered office: Unit 6, Callendar Business Park, Callendar Road, Falkirk, FK1 1XR</string>
+        Registered office: Unit 6, Callendar Business Park, Callendar Road, Falkirk, FK1 1XR\n</string>
 
     <string name="home_p1">Thank you for coming along to our Funders Fayre today, we hope you find the event useful and informative. CVS Falkirk and Falkirk Council
     work together to support local third sector organisations to access funding and are grateful to all our exhibitors here today.\n
@@ -31,8 +31,11 @@
         \n• e-bulletin and social media\n
 
     </string>
-    <string name="home_contact">test</string>
-    <string name="home_signup">test</string>
+    <string name="home_contact">If you would like support with funding or have any questions please contact 01324 692000 or email info@cvsfalkirk.org.uk</string>
+    <string name="home_signup">Sign up for our e-bulletin today at www.cvsfalkirk.org.uk for all our latest news, events and sector activity or follow us on Twitter:</string>
+    <string name="twitter">
+    <a href="https://twitter.com/CVSFalkirk">@CVSFalkirk</a>
+    </string>
     <string name="home_heading">Welcome\n</string>
 
     <string name="top_tips">

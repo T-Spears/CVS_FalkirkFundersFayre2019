@@ -28,8 +28,8 @@
             <TextView
                 android:id="@+id/txtHeader"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
+                android:layout_height="55dp"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/home_heading"
                 android:textAlignment="center"
                 android:textSize="30sp"
@@ -42,16 +42,18 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="104dp"
+                android:layout_height="109dp"
+                android:contentDescription="@string/home_heading"
                 android:src="@drawable/smalllogo" />
 
             <TextView
                 android:id="@+id/txtHomeP1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="@string/home_p1"
-                android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -60,53 +62,103 @@
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="145dp"
-                    android:layout_height="109dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:src="@drawable/smalllogo2"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints" />
-
-                <ImageView
-                    android:layout_width="134dp"
-                    android:layout_height="109dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
-                    android:src="@drawable/falkirkcouncil"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView"
-                    tools:ignore="MissingConstraints" />
-            </android.support.constraint.ConstraintLayout>
+                android:layout_height="match_parent"/>
 
             <TextView
                 android:id="@+id/txtHomeP2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="@string/home_p2"
-                android:textAlignment="center"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:id="@+id/txtHomeP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/home_p3"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/home_list"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/home_contact"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/home_signup"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/twitter"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/home_legal"
                 android:textAlignment="center"
+                android:paddingLeft="10dp"
                 android:textSize="10sp"
+                android:paddingRight="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
