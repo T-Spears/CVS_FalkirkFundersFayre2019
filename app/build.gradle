@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "com.taispears.cvs_falkirkfundersfayre2019"
         vectorDrawables.useSupportLibrary = true
-        minSdkVersion 23
+        minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
