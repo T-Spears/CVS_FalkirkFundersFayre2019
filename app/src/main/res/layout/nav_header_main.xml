@@ -20,7 +20,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:background="@drawable/rounded_button"
+        android:background="@color/Transparent"
         android:foreground="@drawable/home_button"
 
         />
