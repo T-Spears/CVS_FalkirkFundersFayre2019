@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CVS_FalkirkFundersFayre2019</string>
+    <string name="app_name">Falkirk Funders Fayre</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
 
@@ -78,9 +78,104 @@ statistics, case studies, photographs etc. that you need for your monitoring rep
         It’s really important to meet the funder’s conditions of grant and could help with future funding bids\n
     </string>
 
+    <string name="thridss_i1">
+    Providing  a range of services to support to charities and groups.\n
+Requirements: Falkirk &amp; District based third sector organisations.\n
+Contact: 01324 692000 | info@cvsfalkirk.org.uk\n
+</string>
 
+    <string name="crowdfunder_txt">
+        We\'re in Scotland helping to make great ideas happen through a combination of expert crowdfunding coaching, events and grants\n 
+Contact: jenny@crowdfunder.co.uk\n
 
+    </string>
+    <string name="First_port">
+    Support, funding for social entrepreneurs\n
+    Requirements: Social Entrepreneurs\n
+    Contact: 0131 564 0331 | ray@firstport.org.uk\n
+</string>
+    <string name="schoolforsocialenterpreneurs">Provides ongoing training and support to individuals trying to create
+and sustain social enterprises.\n
+Requirements: Social Entrepreneurs\n
+Contact: 07828 030 741 | tracey@ssescotland.org\n
+</string>
+    <string name="Business_Gateway">Provides practical help and guidance to start ups and growing
+businesses.\n
+Requirements: Social Entrepreneurs\n
+Contact: 01324 804 533 | carron.smith@falkirk.gov.uk\n
+</string>
+    <string name="community_shares_scotland">Community Shares Scotland can provide hands on support and guidance           to anybody who wishes to raise through community shares.\n
+Contact: 0131 220 3777 |  Toby@communitysharesscotland.org.uk\n
 
-
-
+</string>
+    <string name="Charity_bee">For Charities who are looking to deliver more for less, demonstrate compliance and to save money,
+        CharityBee has designed a unique portal for the bespoke advice and business support you need.\n
+Contact: 0141 471 0734 |  www.thecharitybee.com\n
+</string>
+    <string name="sis_txt">Social Investment Scotland is a charity and social enterprise that provides loans to
+        other charities, social enterprises and community groups across Scotland.\n
+Contact: 0131 558 7706 |  www.socialinvestmentscotland.com\n
+</string>
+    <string name="Foundation_Scotland">Strengthens local communities by providing a source of funding to community led projects the length and breadth of Scotland.\n
+Requirements: Constituted groups\n
+Contact: 0141 341 4967 | sian@foundationscotland.org.uk\n
+</string>
+    <string name="Robertson_trust">Main priorities:  care, health, education &amp; training, community arts,
+community sport, alcohol misuse, criminal justice.\n
+Requirements: Registered charities or CIC only.\n
+Contact: 0141 353 7300 | admin@therobertsontrust.org.uk\n
+</string>
+    <string name="falkirk_Environment_Trust">Supports environmental projects.\n
+Requirements: Groups must be constituted to apply for main grants scheme.\n
+Contact: 01324 504816 | info@fet.org.uk\n
+</string>
+    <string name="FC_falirk_schools">Grants of up to £1000 for educational projects or for recreational
+facilities.\n
+Requirements: Must be constituted and endorsed by School
+Management Team.\n
+Contact: 01324 506605 | communityschoolscharityboard@falkirk.gov.uk\n
+</string>
+    <string name="Falkirk_council">Community Grants Scheme : up to £5,000 over 12 months\n
+Requirements: Groups must have a constitution and bank account.\n
+Contact: 01324 506065 | funding@falkirk.gov.uk\n
+</string>
+    <string name="heritage_Fund">Largest dedicated funder of heritage in the UK.\n
+Requirements: Constituted voluntary groups, charities\n
+Contact: 0131 240 1583 | Anna.James@hlf.org.uk\n
+</string>
+    <string name="FC_make_A_Diffrence">Make a Difference Fund helps tenants fund projects which improve
+the area they live in.\n
+Requirements: Community Groups - Tenants and Residents Groups\n
+Contact:  01324 590 858 | dawna.chisholm@falkirk.gov.uk\n
+</string>
+    <string name="Kelvin_valley_leader">Grants from £5,000 to  £125,000 available under three themes: heritage, tourism &amp; leisure, community services &amp; facilities and local business &amp;
+employment.\n
+Requirements:  Groups must have a constitution and bank account.\n
+Contact: 01324 590 711| Tom.Rutherford@falkirk.gov.uk\n
+</string>
+    <string name="Greenspace_scotland">Grants for developing community projects across Scotland. Funded from the money raised in Tesco Stores from the 5p plastic bag charge.\n
+Requirements: Constituted groups.\n
+Contact: 01786 849 757  | sue.wyllie@greenspacescotland.org.uk\n
+</string>
+    <string name="NHS_FV">Small grant scheme for groups and organisations to deliver food
+activities within their communities or settings.\n
+Requirements: Constituted groups.\n
+Contact: 01786 434 491 | susankennedy2@nhs.net \n
+</string>
+    <string name="sons_of_the_rock">Gives vital financial help to vulnerable individuals and community groups who are facing challenging circumstances.\n
+Requirements: Constituted groups.\n
+Contact: 01786 841809 | info@sonsoftherock.org.uk
+</string>
+    <string name="community_fund">Awards lottery money to community groups and projects that improve health, education and the environment.\n
+Requirements: Dependent on which fund you are applying to.\n
+Contact:  0141 242 1230 | Jessie.Duncan@tnlcommunityfund.org.uk\n
+</string>
+    <string name="Creative_scotland">Creative Scotland is the public body that supports the arts, screen and creative industries across all parts of Scotland.\n
+Requirements: Constituted groups, charities, individuals\n
+Contact:  0131 523 0030  | Lewis.Porteous@creativescotland.com\n
+</string>
+    <string name="paths_for_all">We fund community path projects to ensure that everyone has access to good quality, multi-use and accessible places to walk and be active.\n
+Requirements: Constituted groups.\n
+Contact: 07741 890861 |  Graham.McQueen@pathsforall.org.uk/n
+</string>
 </resources>
