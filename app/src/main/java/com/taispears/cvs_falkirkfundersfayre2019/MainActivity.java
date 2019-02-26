@@ -97,11 +97,11 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-       Button homeButon = findViewById(R.id.home);
-       homeButon.setOnClickListener(new View.OnClickListener() {
+       Button homeButton = findViewById(R.id.home);
+       homeButton.setOnClickListener(new View.OnClickListener() {
           @Override           public void onClick(View v) {
-              Intent homeButtenintent = new Intent(v.getContext(), MainActivity.class);
-                startActivity(homeButtenintent);
+              Intent homeButtonIntent = new Intent(v.getContext(), MainActivity.class);
+                startActivity(homeButtonIntent);
                 finish();
             }
         });
