@@ -28,11 +28,59 @@
         \n• Weekly funding updates through our e-bulletin
         \n• Monthly funding hotlists
         \n• Promotion of local fundraising events through our website,
-        \n• e-bulletin and social media
+        \n• e-bulletin and social media\n
 
     </string>
     <string name="home_contact">test</string>
     <string name="home_signup">test</string>
     <string name="home_heading">Welcome\n</string>
+
+    <string name="top_tips">
+        1. Review your constitution\n
+It’s really important you review your constitution regularly: it is your governing document and tells you how your
+organisation must be run so make sure it is fit for purpose before planning any projects or applying for funds.\n\n
+2. Do your homework\n
+Always read the funder’s guidelines and the information on their website about work they’ve supported in the past
+        and what they want to fund. It might sound obvious but often groups or organisations spend a lot of time applying
+        to funders who have specific criteria or aims that they don’t meet.\n\n
+3. Plan ahead\n
+Preparing applications and going through the process can take a number of weeks, if not months. Many
+funders will have deadlines throughout the year so diarise when you need to submit your application and give
+        yourself plenty of time from applying to when you need the funds in place.\n\n
+4. Be specific\n
+Make sure to answer the basic questions clearly and concisely when describing your work and how the
+        funds will be spent: Why is it needed? Who will benefit? How many will benefit? How will they benefit?
+        Where will it take place? What will happen if the project doesn’t take place? How will you evaluate your success?\n\n
+5. Get your facts and figures right\n
+Make sure your application is fact based and your numbers add up. Specify all costs and break down the
+figures so that the funder understands where you have got your numbers from and include quotations and
+estimates rather than approximate figures or guessing how much things will cost. \n\n
+6. Get in \n
+Many funders will be pleased to hear from you once you’ve read through their guidelines- if you have
+questions and to discuss your application. It shows that you are keen to work together and
+        what they are looking for and also gives the funder the chance to learn more about the work that you do.\n\n
+7. Make sure you’ve enclosed all the documents requested\n
+You’ll normally be asked to share a copy of your constitution and your annual accounts along with other
+supporting documents and policies. This is a great way of showing your organisation’s credibility,
+        that your finances are properly managed and that you adhere to any applicable guidelines for example Vulnerable
+        persons Policy. \n\n
+8. Check, check and check again!\n
+Compare your application with the funder’s guidelines and make sure you’ve answered all of the questions and
+addressed all points. Make sure your spelling and grammar are correct too.\n\n
+9. Ask someone to read your application\n
+It’s a great idea to ask someone outside the organisation to have a read through your application –
+        many things that may be obvious to you might be difficult to understand or vague to someone unfamiliar with your work.
+        If they can understand the proposal then it’s likely the grant assessor will too. CVS Falkirk is happy to review applications
+        and offer guidance with funding applications.\n\n
+10. SUCCESS!\n
+You’ve secured the funds – congratulations. The work doesn’t stop here though! Remember to record any
+statistics, case studies, photographs etc. that you need for your monitoring report and submit it before the deadline.
+        It’s really important to meet the funder’s conditions of grant and could help with future funding bids\n
+    </string>
+
+
+
+
+
 
 </resources>
