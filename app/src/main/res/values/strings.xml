@@ -192,4 +192,17 @@ Contact: 07741 890861 |  Graham.McQueen@pathsforall.org.uk/n
     <string name="contact_heading">Contact\n</string>
     <string name="reg_char"><b>Registered Charities Only:</b></string>
     <string name="sup_char"><b>Charity Support:</b></string>
+
+
+    <string name="credits_heading">Credits\n</string>
+    <string name="credits"><b>\n42 Development</b>\n
+        Forth Valley College students \n and makers of the Funders Fayre App, \n come and talk to us at table number 22! \n\n
+        <b>Steven Dixon</b> \n
+        <b>Tai Spears</b> \n
+        <b>Krzysztof Stępień</b> \n
+        <b>Mateusz Głowacki</b> \n
+
+    </string>
+
+
 </resources>
