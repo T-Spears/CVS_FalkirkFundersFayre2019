@@ -190,4 +190,6 @@ Contact: 07741 890861 |  Graham.McQueen@pathsforall.org.uk/n
 </string>
 
     <string name="contact_heading">Contact\n</string>
+    <string name="reg_char"><b>Registered Charities Only:</b></string>
+    <string name="sup_char"><b>Charity Support:</b></string>
 </resources>

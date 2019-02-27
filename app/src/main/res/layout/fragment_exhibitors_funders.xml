@@ -19,20 +19,21 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:text="Funders"
                 android:textAlignment="center"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textStyle="bold"
 
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -41,6 +42,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/sup_char"/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -57,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/First_port"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -79,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/schoolforsocialenterpreneurs"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -100,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/Business_Gateway"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -121,7 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/community_shares_scotland"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -133,7 +140,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:background="@color/White"
-                android:src="@drawable/schoolforscial"
+                android:src="@drawable/charitybee"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
@@ -142,7 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/Charity_bee"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -163,53 +170,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/sis_txt"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/foundationscotland"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="@string/Foundation_Scotland"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/robertsonstrust"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="@string/Robertson_trust"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -226,7 +192,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/falkirk_Environment_Trust"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -247,7 +213,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/FC_falirk_schools"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -267,9 +233,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/Falkirk_council"
                 android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -288,7 +255,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/heritage_Fund"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -309,7 +276,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/FC_make_A_Diffrence"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -330,7 +297,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/Kelvin_valley_leader"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -351,7 +318,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/Greenspace_scotland"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -372,9 +339,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/NHS_FV"
                 android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -393,7 +361,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/sons_of_the_rock"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -414,7 +382,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/community_fund"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -435,7 +403,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/Creative_scotland"
                 android:textAlignment="center"
                 android:textSize="12sp"
@@ -456,12 +424,80 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/paths_for_all"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/White"
+                android:src="@drawable/foundationscotland"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TSS_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:fontFamily="sans-serif-light"
+                android:text="@string/Foundation_Scotland"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/reg_char"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/White"
+                android:src="@drawable/robertsonstrust"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TSS_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:fontFamily="sans-serif-light"
+                android:text="@string/Robertson_trust"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/White"
+                android:src="@drawable/crowdfinder"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TSS_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:fontFamily="sans-serif-light"
+                android:text="@string/crowdfunder_txt"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
         </LinearLayout>
 
