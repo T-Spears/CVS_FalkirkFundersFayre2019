@@ -6,8 +6,7 @@
     android:id="@+id/testing"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="@color/colorPrimary">
+    android:background="@color/default_circle_indicator_fill_color">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -33,7 +32,6 @@
                 android:paddingBottom="10dp"
                 android:text="Funders"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="30dp"
                 android:textStyle="bold"
 
@@ -62,7 +60,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/First_port"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -85,7 +82,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/schoolforsocialenterpreneurs"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -107,7 +103,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/Business_Gateway"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -129,7 +124,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/community_shares_scotland"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -151,7 +145,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/Charity_bee"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -173,7 +166,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/sis_txt"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -195,7 +187,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/Foundation_Scotland"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -217,7 +208,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/Robertson_trust"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -239,7 +229,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/falkirk_Environment_Trust"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -261,7 +250,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/FC_falirk_schools"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
             <ImageView
@@ -282,7 +270,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/Falkirk_council"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -304,7 +291,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/heritage_Fund"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -326,7 +312,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/FC_make_A_Diffrence"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -348,7 +333,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/Kelvin_valley_leader"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -370,7 +354,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/Greenspace_scotland"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -392,7 +375,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/NHS_FV"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -414,7 +396,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/sons_of_the_rock"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -436,7 +417,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/community_fund"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -458,7 +438,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/Creative_scotland"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -480,7 +459,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/paths_for_all"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 

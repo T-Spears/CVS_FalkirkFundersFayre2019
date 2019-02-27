@@ -148,10 +148,6 @@ public class MainActivity extends AppCompatActivity
         headerList.add(menuModel);
         menuModel = new MenuModel("Contact", true, false, "contact");
         headerList.add(menuModel);
-        menuModel = new MenuModel("Twitter", true, false, "twit");
-        headerList.add(menuModel);
-        menuModel = new MenuModel("Reminder", true, false, "reminder");
-        headerList.add(menuModel);
         menuModel = new MenuModel("Credits", true, false, "credits");
         headerList.add(menuModel);
 
@@ -203,17 +199,6 @@ public class MainActivity extends AppCompatActivity
                                     new FragmentContact()).commit();
                             onBackPressed();
 
-                        }else if (headerList.get(groupPosition).getItemID() == "twit") {
-
-                            getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
-                                    new FragmentTwitter()).commit();
-                            onBackPressed();
-
-                        }else if (headerList.get(groupPosition).getItemID() == "reminder") {
-
-                            getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
-                                    new FragmentReminder()).commit();
-                            onBackPressed();
 
                         }else if (headerList.get(groupPosition).getItemID() == "credits") {
 

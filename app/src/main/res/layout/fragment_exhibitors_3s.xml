@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@color/colorPrimary">
+    android:background="@color/default_circle_indicator_fill_color">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -19,20 +19,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
+                app:fontFamily="sans-serif-light"
                 android:text="Third Sector Support"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="30dp"
                 android:textStyle="bold"
 
@@ -58,10 +54,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="sans-serif-light"
+                app:fontFamily="sans-serif-light"
                 android:text="@string/thridss_i1"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -84,7 +79,6 @@
                 android:fontFamily="sans-serif-light"
                 android:text="@string/crowdfunder_txt"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
         </LinearLayout>
