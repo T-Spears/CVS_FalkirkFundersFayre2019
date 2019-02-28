@@ -1,9 +1,14 @@
 package com.taispears.cvs_falkirkfundersfayre2019;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -33,6 +38,9 @@ public class MainActivity extends AppCompatActivity
     List<MenuModel> headerList = new ArrayList<>();
     HashMap<MenuModel, List<MenuModel>> childList = new HashMap<>();
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +50,8 @@ public class MainActivity extends AppCompatActivity
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         TextView twitter = (TextView) findViewById(R.id.twitterLink);
         twitter.setMovementMethod(LinkMovementMethod.getInstance());
+
+
 
         expandableListView = findViewById(R.id.expandableListView);
         prepareMenuData();
@@ -55,9 +65,16 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
 
+
+        showNotification("Test", "Testing the notification");
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
+
+
 
     @Override
     public void onBackPressed() {
@@ -202,6 +219,7 @@ public class MainActivity extends AppCompatActivity
 
                         }else if (headerList.get(groupPosition).getItemID() == "credits") {
 
+
                             getSupportFragmentManager().beginTransaction().replace(R.id.main_content,
                                     new FragmentCredits()).commit();
                             onBackPressed();
@@ -239,7 +257,31 @@ public class MainActivity extends AppCompatActivity
 
             });
 
-    }}
+    }
+
+    void showNotification(String title, String content) {
+        NotificationManager mNotificationManager =
+                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel("default",
+                    "channel1",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            channel.setDescription("desc");
+            mNotificationManager.createNotificationChannel(channel);
+        }
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext(), "default")
+                .setSmallIcon(R.drawable.notification_icon) // notification icon
+                .setContentTitle(title) // title for notification
+                .setContentText(content)// message for notification
+                .setAutoCancel(true); // clear notification after click
+        Intent intent= new Intent();// ne Intent(this, MainActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0); // PendingIntent.FLAG_UPDATE_CURRENT instead of last 0
+        mBuilder.setContentIntent(pi);
+        mNotificationManager.notify(0, mBuilder.build());
+    }
+
+
+}
 
 
 
