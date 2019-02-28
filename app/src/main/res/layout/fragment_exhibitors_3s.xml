@@ -11,11 +11,7 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,11 +22,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:fontFamily="sans-serif-light"
                 android:text="Third Sector Support"
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:textStyle="bold"
+                app:fontFamily="sans-serif-light"
 
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -50,17 +46,141 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/TSS_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                app:fontFamily="sans-serif-light"
                 android:text="@string/thridss_i1"
                 android:textAlignment="center"
                 android:textSize="12sp"
+                app:fontFamily="sans-serif-light"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/White"
+                android:src="@drawable/firstport"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/First_port"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/White"
+                android:src="@drawable/schoolforscial"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TSS_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/schoolforsocialenterpreneurs"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/White"
+                android:src="@drawable/businessgateway"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TSS_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Business_Gateway"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/White"
+                android:src="@drawable/comunityshares"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TSS_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/community_shares_scotland"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/White"
+                android:src="@drawable/charitybee"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TSS_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Charity_bee"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/White"
+                android:src="@drawable/sis"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TSS_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/sis_txt"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
         </LinearLayout>
 

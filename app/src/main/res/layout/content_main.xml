@@ -100,7 +100,6 @@
                 android:paddingRight="10dp"
                 android:text="@string/home_list"
                 android:textSize="12sp"
-                android:textStyle="bold"
                 app:fontFamily="sans-serif-light"
                 app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"

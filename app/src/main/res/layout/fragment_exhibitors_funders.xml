@@ -43,138 +43,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="@string/sup_char"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/firstport"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                app:fontFamily="sans-serif-light"
-                android:text="@string/First_port"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/schoolforscial"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                app:fontFamily="sans-serif-light"
-                android:text="@string/schoolforsocialenterpreneurs"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/businessgateway"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                app:fontFamily="sans-serif-light"
-                android:text="@string/Business_Gateway"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/comunityshares"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                app:fontFamily="sans-serif-light"
-                android:text="@string/community_shares_scotland"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/charitybee"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                app:fontFamily="sans-serif-light"
-                android:text="@string/Charity_bee"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/sis"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                app:fontFamily="sans-serif-light"
-                android:text="@string/sis_txt"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
 
 
             <ImageView
@@ -216,27 +85,6 @@
                 app:fontFamily="sans-serif-light"
                 android:text="@string/FC_falirk_schools"
                 android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/falkirkcouncil"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                app:fontFamily="sans-serif-light"
-                android:text="@string/Falkirk_council"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_red_light"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -321,28 +169,6 @@
                 app:fontFamily="sans-serif-light"
                 android:text="@string/Greenspace_scotland"
                 android:textAlignment="center"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:background="@color/White"
-                android:src="@drawable/nhs"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/TSS_16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                app:fontFamily="sans-serif-light"
-                android:text="@string/NHS_FV"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_red_light"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -450,12 +276,6 @@
                 android:textAlignment="center"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="@string/reg_char"/>
 
             <ImageView
                 android:layout_width="match_parent"
