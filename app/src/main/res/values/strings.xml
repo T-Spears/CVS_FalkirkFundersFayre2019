@@ -206,9 +206,9 @@ Contact: 07741 890861 |  Graham.McQueen@pathsforall.org.uk\n
         <b>Email: </b>42devfv@gmail.com
     </string>
 
-    <stinrg name="coalfields">Dedicated to supporting the UK’s former coal mining communities\n
+    <string name="coalfields">Dedicated to supporting the UK’s former coal mining communities\n
         Contact: 01259 230 910 | angela.davis@coalfields-regen.org.uk\n
-    </stinrg>
+    </string>
     <string name="notification_header">
 
     </string>
