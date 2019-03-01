@@ -307,7 +307,7 @@ public class MainActivity extends AppCompatActivity
 
                 .setSmallIcon(R.drawable.fffvectorlogo) // notification icon
 
-                .setSmallIcon(R.drawable.notification_icon)
+                .setSmallIcon(R.drawable.fffvectorlogo)
                 .setTicker("Falkirk Funders Fayre")
                 .setVibrate(new long[] { 1000, 1000, 1000, 1000, 1000 })
                 .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
