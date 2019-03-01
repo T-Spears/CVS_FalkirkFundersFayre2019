@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.GravityCompat;
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity
     List<MenuModel> headerList = new ArrayList<>();
     HashMap<MenuModel, List<MenuModel>> childList = new HashMap<>();
 
+    final CharSequence notificationText = "Are you attending the Crowdfunder Workshop at 12:30? If you have not yet registered please do so at reception!";
+
+
 
 
 
@@ -65,8 +69,9 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
 
-
-        showNotification("Test", "Testing the notification");
+        // notification text is set as Char sequence in order to display bigger notification
+        //coudn't be bothered to change the method
+        showNotification("Falkirk Funders Fayre", "");
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -86,6 +91,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(backPressed);
             finish();
         }
+
+
 
 //        @Override
 //        public boolean onCreateOptionsMenu (Menu menu){
@@ -270,10 +277,19 @@ public class MainActivity extends AppCompatActivity
             mNotificationManager.createNotificationChannel(channel);
         }
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext(), "default")
+
                 .setSmallIcon(R.drawable.fffvectorlogo) // notification icon
+
+                .setSmallIcon(R.drawable.notification_icon)
+                .setTicker("Falkirk Funders Fayre")
+                .setVibrate(new long[] { 1000, 1000, 1000, 1000, 1000 })
+                .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
+
                 .setContentTitle(title) // title for notification
-                .setContentText(content)// message for notification
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(notificationText))
+
                 .setAutoCancel(true); // clear notification after click
+
         Intent intent= new Intent();// ne Intent(this, MainActivity.class);
         PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0); // PendingIntent.FLAG_UPDATE_CURRENT instead of last 0
         mBuilder.setContentIntent(pi);
