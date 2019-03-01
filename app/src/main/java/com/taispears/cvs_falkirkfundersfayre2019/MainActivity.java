@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         // handling the notifications
-        calendar.set(2019, 2, 05, 12, 15 ,00); // month is 02 because it counter for it starts with 0
+        calendar.set(2019, 02, 05, 12, 15 ,00); // month is 02 because it counter for it starts with 0
        // calendar.set(2019, 2, 01, 18, 01 ,00);//testing date
         long startTime = System.currentTimeMillis();
         long endTime = calendar.getTimeInMillis();
