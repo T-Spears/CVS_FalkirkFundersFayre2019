@@ -1,12 +1,13 @@
 package com.taispears.cvs_falkirkfundersfayre2019;
 
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
+import android.app.AlarmManager;
+import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.provider.Settings;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.NotificationCompat;
@@ -24,6 +25,7 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 
@@ -39,7 +41,14 @@ public class MainActivity extends AppCompatActivity
     List<MenuModel> headerList = new ArrayList<>();
     HashMap<MenuModel, List<MenuModel>> childList = new HashMap<>();
 
-    final CharSequence notificationText = "Are you attending the Crowdfunder Workshop at 12:30? If you have not yet registered please do so at reception!";
+    // notification variables
+    final CharSequence notificationText = "Are you attending the Crowdfunder Workshop at 12:30?" +
+            " If you have not yet registered please do so at reception!";
+    Calendar calendar = Calendar.getInstance();
+
+
+
+
 
 
 
@@ -68,10 +77,22 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        // handling the notifications
+        calendar.set(2019, 2, 05, 12, 15 ,00); // month is 02 because it counter for it starts with 0
+       // calendar.set(2019, 2, 01, 18, 01 ,00);//testing date
+        long startTime = System.currentTimeMillis();
+        long endTime = calendar.getTimeInMillis();
+        long remain = endTime - startTime;
+        scheduleNotification(getNotification("set to the date above"), remain);
+        //scheduleNotification(getNotification(""), 15000); // number is a delay in miliseconds
 
-        // notification text is set as Char sequence in order to display bigger notification
-        //coudn't be bothered to change the method
-        showNotification("Falkirk Funders Fayre", "");
+        // logging the fucking miliseconds
+        Log.e("Now time : ", ""+ startTime);
+        Log.e("Set time : ", ""+ endTime);
+        Log.e("difference : ", ""+ remain);
+
+
+        //showNotification("Falkirk Funders Fayre", "");
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -122,8 +143,6 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
 
        Button homeButton = findViewById(R.id.home);
        homeButton.setOnClickListener(new View.OnClickListener() {
@@ -266,16 +285,24 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    void showNotification(String title, String content) {
-        NotificationManager mNotificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel("default",
-                    "channel1",
-                    NotificationManager.IMPORTANCE_DEFAULT);
-            channel.setDescription("desc");
-            mNotificationManager.createNotificationChannel(channel);
-        }
+    private void scheduleNotification(Notification notification, long delay) {
+
+        Intent notificationIntent = new Intent(this, NotificationPublisher.class);
+        notificationIntent.putExtra(NotificationPublisher.NOTIFICATION_ID, 1);
+        notificationIntent.putExtra(NotificationPublisher.NOTIFICATION, notification);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        long futureInMillis = SystemClock.elapsedRealtime() + delay;
+        AlarmManager alarmManager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
+        alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, futureInMillis, pendingIntent);
+    }
+
+    private Notification getNotification(String content) {
+       /* Notification.Builder builder = new Notification.Builder(this);
+        builder.setContentTitle("Scheduled Notification");
+        builder.setContentText(content);
+        builder.setSmallIcon(R.drawable.notification_icon);*/
+
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext(), "default")
 
                 .setSmallIcon(R.drawable.fffvectorlogo) // notification icon
@@ -285,17 +312,17 @@ public class MainActivity extends AppCompatActivity
                 .setVibrate(new long[] { 1000, 1000, 1000, 1000, 1000 })
                 .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
 
-                .setContentTitle(title) // title for notification
+                .setContentTitle("Presentation Alert") // title for notification
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(notificationText))
 
                 .setAutoCancel(true); // clear notification after click
-
         Intent intent= new Intent();// ne Intent(this, MainActivity.class);
         PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0); // PendingIntent.FLAG_UPDATE_CURRENT instead of last 0
         mBuilder.setContentIntent(pi);
-        mNotificationManager.notify(0, mBuilder.build());
-    }
 
+
+        return mBuilder.build();
+    }
 
 }
 
