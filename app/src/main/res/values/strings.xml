@@ -206,5 +206,10 @@ Contact: 07741 890861 |  Graham.McQueen@pathsforall.org.uk\n
         <b>Email: </b>42devfv@gmail.com
     </string>
 
+    <string name="notification_header">
 
+    </string>
+    <string name = "notification_content">
+
+    </string>
 </resources>
