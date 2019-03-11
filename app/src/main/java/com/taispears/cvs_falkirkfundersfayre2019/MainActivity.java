@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.provider.Settings;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -79,8 +81,8 @@ public class MainActivity extends AppCompatActivity
 
         // handling the notifications
         calendar.set(2019, 02, 05, 12, 15 ,00); // month is 02 because it counter for it starts with 0
-       // calendar.set(2019, 2, 01, 18, 01 ,00);//testing date
-        long startTime = System.currentTimeMillis();
+       // calendar.set(2019, 2, 01, 18, 44 ,00);//testing date
+       /* long startTime = System.currentTimeMillis();
         long endTime = calendar.getTimeInMillis();
         long remain = endTime - startTime;
         scheduleNotification(getNotification("set to the date above"), remain);
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity
         Log.e("Now time : ", ""+ startTime);
         Log.e("Set time : ", ""+ endTime);
         Log.e("difference : ", ""+ remain);
-
+*/
 
         //showNotification("Falkirk Funders Fayre", "");
 
@@ -104,10 +106,13 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
+
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_Layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else {
+        }
+        else {
             Intent backPressed = new Intent(this, MainActivity.class);
             startActivity(backPressed);
             finish();
